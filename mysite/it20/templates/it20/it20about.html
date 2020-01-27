@@ -1,97 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About IT20</title>
-  </head>
-  <body>
-    <a href="{% url 'iichome:home' %}" class="btn" method="get">got to home page</a>
-    {% if user.is_authenticated %}
-              <form action="{% url 'it20:logout' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">logout</button>
-              </form>
-              <form action="{% url 'it20:submit' %}" method="GET">
-                {% csrf_token %}
-                <button type="submit">Submit your idea</button>
-              </form>
-    {% else %}
-              <form action="{% url 'it20:login' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">login</button>
-              </form>
-              <form action="{% url 'it20:signup' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">signup</button>
-              </form>
-    {% endif %}
-  </body>
-</html>
--->
-
-<!--
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="new.css" rel="stylesheet">
-    <title>IT20</title>
-  </head>
-  <body>
-
-
-
-	<a href="#" class="btn btn-primary active " role="button">Link Button</a>
-<a href="#" class="btn btn-primary active" role="button">Link Button</a>
-
-
-
-
-    <h1>Page for About IT20</h1>
-    <a href="{% url 'iichome:home' %}" class="btn" method="get">got to home page</a>
-    {% if user.is_authenticated %}
-              <form action="{% url 'it20:logout' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">logout</button>
-              </form>
-              <form action="{% url 'it20:submit' %}" method="GET">
-                {% csrf_token %}
-                <button type="submit">Submit your idea</button>
-              </form>
-    {% else %}
-              <form action="{% url 'it20:login' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">login</button>
-              </form>
-              <form action="{% url 'it20:signup' %}" method="POST">
-                {% csrf_token %}
-                <button type="submit">signup</button>
-              </form>
-    {% endif %}
-  </body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>iic jss-stu</title>
-  </head>
-  <body>
-    <h1>IIC Home Page</h1>
-    <form action="{% url 'it20:it20about' %}" method="POST">
-      {% csrf_token %}
-      <button type="submit">About IT20</button>
-    </form>
-  </body>
-</html>-->
-
-<!--<form action="{% url 'iichome:home' %}" method="POST">
-  {% csrf_token %}
-  <button type="submit">Back to IIChome</button>
-</form>-->
-
 <!--
 //////////////////////////////////////////////////////
 
@@ -113,38 +19,24 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-  	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
   	<!-- Google Webfont -->
-		<!-- Google Webfont -->
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- Themify Icons -->
-	<link rel="stylesheet" href="{% static 'iic/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
 	<!-- FontAwesome Icons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="{% static 'iic/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{% static 'iic/css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'iic/css/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="{% static 'iic/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.cs' %}s">
 	<!-- Easy Responsive Tabs -->
-	<link rel="stylesheet" href="{% static 'iic/css/easy-responsive-tabs.css' %}">
+	<link rel="stylesheet" href="{% static 'css/easy-responsive-tabs.css' %}">
 	<!-- Theme Style -->
-	<link rel="stylesheet" href="{% static 'iic/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
 	<!-- FOR IE9 below -->
@@ -153,68 +45,65 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body class="gototop">
+</head>
+<body class="gototop">
 
-		<!-- Navigation --
-		<div id="fh5co-main-nav-wrap">
-			<div class="fh5co-nav-overlay"></div>
-			<div class="fh5co-nav-inner">
-				<ul id="fh5co-main-nav">
-					<li><a href="index.html">Home</a></li>
-					<li class="active"><a href="about.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-				<ul class="fh5co-social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</div>
+      <!-- Navigation -->
+       <div id="fh5co-main-nav-wrap">
+   <div class="fh5co-nav-overlay"></div>
+    <div class="fh5co-nav-inner">
+      <ul id="fh5co-main-nav">
+        <li ><a href="{% url 'iichome:home' %}">Home</a></li>
+        <!--<li><a href="{% url 'it20:it20about' %}">Ideathon 2020</a></li>-->
+        <li><a href="#contactin">Contact Us</a></li>
+      </ul>
+<!--					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+      </ul>
+    -->
+    </div>
+  </div>
 		<!-- Navigation -->
 
 		<!-- Header -->
 		<header id="fh5co-header" role="banner">
-			<a href="{% url 'iichome:home' %}" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
+			<a class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
 		</header>
 		<!-- Header -->
 
 		<!-- Hero -->
-		<aside role="complementary" id="fh5co-hero" style="background-image: url({% static 'iic/images/blog/blog-img2.jpg' %});">
+		<aside role="complementary" id="fh5co-hero" style="background-image: url({% static 'images/ideathon_bg3.jpg' %});">
 
 			<div class="container">
 				<div class="fh5co-hero-text-wrap">
 					<div class="fh5co-hero-text">
 						<h2 class="fh5co-uppercase-heading-sm">IDEATHON 2020</h2>
 						<h1>Innovate &amp; Inspire</h1>
-						{% if user.is_authenticated %}
-				              <form action="{% url 'it20:logout' %}" method="POST">
-				                {% csrf_token %}
-				                <button type="submit" class="btn btn-primary active ">logout</button>
-				              </form>
-				              <form action="{% url 'it20:submit' %}" method="GET">
-				                {% csrf_token %}
-				                <button type="submit" class="btn btn-primary active ">Submit your idea</button>
-				              </form>
-											<form action="{% url 'it20:download' %}" method="GET">
-				                {% csrf_token %}
-				                <button type="submit" class="btn btn-primary active ">Download Format</button>
-				              </form>
-				    {% else %}
-				              <form action="{% url 'it20:login' %}" method="POST">
-				                {% csrf_token %}
-				                <button type="submit" class="btn btn-primary active ">login</button>
-				              </form>
-				              <form action="{% url 'it20:signup' %}" method="POST">
-				                {% csrf_token %}
-				                <button type="submit" class="btn btn-primary active ">signup</button>
-				              </form>
-				    {% endif %}
+            {% if user.is_authenticated %}
+  				              <form action="{% url 'it20:logout' %}" method="POST">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">logout</button>
+  				              </form>
+  				              <form action="{% url 'it20:submit' %}" method="GET">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">Submit your idea</button>
+  				              </form>
+  											<form action="{% url 'it20:download' %}" method="GET">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">Download Format</button>
+  				              </form>
+  				    {% else %}
+  				              <form action="{% url 'it20:login' %}" method="POST">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">login</button>
+  				              </form>
+  				              <form action="{% url 'it20:signup' %}" method="POST">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">signup</button>
+  				              </form>
+  				    {% endif %}
 					</div>
 				</div>
 			</div>
@@ -229,178 +118,151 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 				<div class="row">
 					<div class="col-md-5">
-						<h2>Lorem ipsum dolor sit amet</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe, sunt eos necessitatibus consectetur laudantium praesentium blanditiis iusto architecto ad quibusdam temporibus neque, ipsa tempore officia a. Accusantium quibusdam enim repellendus ea, totam odit. Commodi accusamus vel sit laudantium nemo velit, maxime quisquam a reprehenderit aliquam? Officia cum, sit cumque quisquam quae nemo.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque voluptas tenetur, numquam, provident enim impedit quia aliquam. Neque, quod.</p>
-					    <a href="#" class="btn btn-success active bb" role="button">REGISTER NOW</a>
+						<h2>Why Ideathon 2.0</h2>
+						<ul>
+							<li>
+								MHRD’s initiative to promote innovation
+							</li>
+							<li>
+								Top three teams will be awarded with cash prize worth 18K
+							</li>
+							<li>
+								Top three teams will get opportunity to pitch their idea at state and national level and may get a chance to visit Canada or South Korea for product development.
+							</li>
+						</ul>
+						<h2>Guidelines</h2>
+						<ul>
+							<li>
+								Create your account in our web portal.
+							</li>
+							<li>
+								 Download Ideathon_2.0.docx file in which instructions are given.
+							</li>
+							<li>
+								 Follow the instructions and the prescribed format.
+							</li>
+							<li>
+								 Create and upload a PDF file to the website.
+							</li>
+						</ul>
+						<h2>Other Information</h2>
+						<ul>
+							<li>
+								The uploaded ideas will be screened to go second round.
+
+							</li>
+							<li>
+								In second round, the selected teams will have to present their idea in front of the jury panel.
+							</li>
+						</ul>
+            {% if user.is_authenticated %}
+
+  				              <form action="{% url 'it20:submit' %}" method="GET">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-success active bb ">Submit your idea</button>
+  				              </form>
+
+  				    {% else %}
+  				              <form action="{% url 'it20:login' %}" method="POST">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-success active bb">login</button>
+  				              </form>
+  				              <form action="{% url 'it20:signup' %}" method="POST">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary active ">signup</button>
+  				              </form>
+  				    {% endif %}
 					</div>
 					<div class="col-md-6 col-md-push-1">
 						<figure class="fh5co-with-caption">
-							<img src="{% static 'iic/images/blog/blog-img2.jpg' %}" alt="Image" class="img-responsive">
-							<figcaption>This is an image caption.</figcaption>
+							<img src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-responsive">
+							<figcaption>ideathon picture here.</figcaption>
 						</figure>
+						<h2>FAQ</h2>
+						<ul>
+							<li>
+								Anyone can participate (irrespective of stream)
+							</li>
+							<li>
+								Interbranch teams are allowed
+							</li>
+							<li>
+								Maximum 3 members in a team
+							</li>
+              <li>
+								Intercollegiate teams are not allowed.
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-
-
-
-            <!--carousel--
-			<div id="js-fh5co-slider">
-				<div class="container">
-
-
-					<div class="row">
-						<div class="col-md-12">
-							<div class="owl-carousel owl-carousel-fullwidth">
-							    <div class="item"><img src="images/img_large_1.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_2.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_3.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_4.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_5.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_6.jpg" alt="image"></div>
-							    <div class="item"><img src="images/img_large_7.jpg" alt="image"></div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-            <!--carousel-->
 
 			<div class="fh5co-spacer fh5co-spacer-lg"></div>
 
-		</main>
-		<!-- Main -->
+    </main>
+    <!-- Main -->
 
-		<!-- Footer --
-		<footer role="contentinfo">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<h2 class="fh5co-footer-title">About</h2>
-						<p>A Free HTML5 templates created by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> &amp; Images by <a href="http://unsplash.com" target="_blank">Unsplash.com</a></p>
-					</div>
-					<div class="col-md-5">
-						<h2 class="fh5co-footer-title">Offices</h2>
-						<div class="row">
-							<div class="col-md-6">
-								<h3 class="h4">New York</h3>
-								<address>2926 Bicetown Road <br> New York, NY 10016</address>
-							</div>
-							<div class="col-md-6">
-								<h3 class="h4">Alaska</h3>
-								<address>1806 Veltri Drive <br> Anchorage, AK 99503</address>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<h2 class="fh5co-footer-title">Links</h2>
-						<ul class="fh5co-footer-links">
-							<li><a href="#">FREEHTML5.co</a></li>
-							<li><a href="#">Smashingmagazine</a></li>
-							<li><a href="#">A List Apart</a></li>
-							<li><a href="#">Creative Market</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2">
-						<h2 class="fh5co-footer-title">Connect</h2>
-						<ul class="fh5co-footer-links">
-							<li><a href="#" class="fh5co-link"><i class="fa fa-twitter"></i>Twitter</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-github"></i>Github</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-google"></i>Google Plus</a></li>
-						</ul>
-					</div>
-				</div>
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container" id="contactin">
+        <div class="row">
+          <div class="col-md-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.037274744301!2d76.61123781412908!3d12.31327673231407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7ae94fffffff%3A0x1ad797cbfc78d07a!2sJSS%20Science%20and%20Technology%20University%2C%20Mysuru.!5e0!3m2!1sen!2sin!4v1577629431800!5m2!1sen!2sin" width="400" height="200" frameborder="0" style="border:0;width:90%" allowfullscreen=""></iframe>
+          </div>
+          <div class="col-md-4 ml">
+          <h5>Email-Id</h5>
+          <ul class="fh5co-footer-links ">
+              <li><a href="#" class="fh5co-link "><i class="fa fa-envelope"></i>
+              iicjssstu@gmail.com
+              </a>
+              </li>
+          </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="fh5co-footer-title">Connect</h2>
+            <ul class="fh5co-footer-links">
+              <li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+              <li><a href="https://www.instagram.com/iicjss_stu/" class="fh5co-link"><i class="fa fa-instagram"></i>Instagram</a></li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="fh5co-copyright">
-							<p class="pull-left">&copy;	Relic 2015. All Rights Reserved. <br> Lovely crafted by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> Images by <a href="http://unsplash.com/">Unsplash</a> </p>
-							<ul class="pull-right fh5co-footer-social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fh5co-copyright">
+                 <p class="pull-left">&copy;	Relic 2015. All Rights Reserved. <br> Lovely crafted by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> further designed by IIC JSSSTU</p>
 
-			</div>
-		</footer>
-		<!-- Footer -->
-		<!-- Footer -->
-		<footer role="contentinfo">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.037274744301!2d76.61123781412908!3d12.31327673231407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7ae94fffffff%3A0x1ad797cbfc78d07a!2sJSS%20Science%20and%20Technology%20University%2C%20Mysuru.!5e0!3m2!1sen!2sin!4v1577629431800!5m2!1sen!2sin" width="400" height="200" frameborder="0" style="border:0;width:90%" allowfullscreen=""></iframe>
-					</div>
-					<div class="col-md-4 ml">
-					<h5>Email-Id</h5>
-					<ul class="fh5co-footer-links ">
-							<li><a href="#" class="fh5co-link "><i class="fa fa-envelope"></i>
-							dummy@gmail.com
-							</a>
-							</li>
-					</ul>
-					</div>
-					<div class="col-md-3">
-						<h2 class="fh5co-footer-title">Connect</h2>
-						<ul class="fh5co-footer-links">
-							<li><a href="#" class="fh5co-link"><i class="fa fa-twitter"></i>Twitter</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-							<li><a href="#" class="fh5co-link"><i class="fa fa-google"></i>Google Plus</a></li>
-						</ul>
-					</div>
-				</div>
+            </div>
+          </div>
+        </div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="fh5co-copyright">
-							<p class="pull-left">&copy; IIC_JSSSTU. All Rights Reserved. </p>
-							<ul class="pull-right fh5co-footer-social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+      </div>
+    </footer>
+    <!-- Footer -->
 
-			</div>
-		</footer>
-		<!-- Footer -->
+    <!-- Go To Top
+    <a href="#" class="fh5co-gotop"><i class="ti-angle-up"></i></a>
+    -->
 
-		<!-- Go To Top -->
-		<a href="#" class="fh5co-gotop"><i class="ti-angle-up"></i></a>
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+    <!-- jQuery Easing -->
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- Owl carousel -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Easy Responsive Tabs -->
+    <script src="{% static 'js/easyResponsiveTabs.js' %}"></script>
+    <!-- FastClick for Mobile/Tablets -->
+    <script src="{% static 'js/fastclick.js' %}"></script>
+    <!-- Velocity -->
+    <script src="{% static 'js/velocity.min.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
 
 
-
-
-		<!-- jQuery -->
-		<!-- jQuery -->
-		<script src="{% static 'iic/js/jquery-1.10.2.min.js' %}"></script>
-		<!-- jQuery Easing -->
-		<script src="{% static 'iic/js/jquery.easing.1.3.js' %}"></script>
-		<!-- Bootstrap -->
-		<script src="{% static 'iic/js/bootstrap.js' %}"></script>
-		<!-- Owl carousel -->
-		<script src="{% static 'iic/js/jquery.magnific-popup.min.js' %}"></script>
-		<script src="{% static 'iic/js/owl.carousel.min.js' %}"></script>
-		<!-- Easy Responsive Tabs -->
-		<script src="{% static 'iic/js/easyResponsiveTabs.js' %}"></script>
-		<!-- Easy Responsive Tabs -->
-		<script src="{% static 'iic/js/fastclick.js' %}"></script>
-		<!-- Velocity -->
-		<script src="{% static 'iic/js/velocity.min.js' %}"></script>
-		<!-- Main JS -->
-		<script src="{% static 'iic/js/main.js' %}"></script>
-
-	</body>
-</html>
+  </body>
+  </html>

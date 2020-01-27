@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Idea Submission</title>
+  </head>
+  <body>
+    <h1>Idea Submission Page</h1>
+    <form action="{% url 'it20:submit' %}" method="post">
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+      {{ form.source.errors }}
+      {{ form.source }}
+      <table border="1">
+        <tr>
+          <th>{{ form.mem1.label_tag }}</th>
+          <td>
+            {{ form.mem1.errors }}
+            {{ form.mem1 }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.mem2.label_tag }}</th>
+          <td>
+            {{ form.mem2.errors }}
+            {{ form.mem2 }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.mem3.label_tag }}</th>
+          <td>
+            {{ form.mem3.errors }}
+            {{ form.mem3 }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.upi.label_tag }}</th>
+          <td>
+            {{ form.upi.errors }}
+            {{ form.upi }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.title.label_tag }}</th>
+          <td>
+            {{ form.title.errors }}
+            {{ form.title }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.introduction.label_tag }}</th>
+          <td>
+            {{ form.introduction.errors }}
+            {{ form.introduction }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.body.label_tag }}</th>
+          <td>
+            {{ form.body.errors }}
+            {{ form.body }}
+          </td>
+        </tr>
+        <tr>
+          <th>{{ form.email.label_tag }}</th>
+          <td>
+            {{ form.email.errors }}
+            {{ form.email }}
+          </td>
+        </tr>
+      </table>
+
+  <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

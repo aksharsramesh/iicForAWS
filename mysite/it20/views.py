@@ -11,12 +11,12 @@ from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
+from django.core.files.storage import FileSystemStorage
 from .forms import SignupForm, NEWIdeaSubmissionForm
 from .tokens import account_activation_token
-from django.core.files.storage import FileSystemStorage
+from .models import newIdea
 
 def it20about(request):
-
     return render(request, 'it20/it20about.html')
 
 def signup(request):
@@ -58,6 +58,10 @@ def activate(request, uidb64, token):
         # return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
     else:
         return HttpResponse('Activation link is invalid!')
+
+def downloadALL_view(request):
+    ideas = newIdea.objects.all().order_by('date')
+    return render(request, 'it20/download_page.html', { 'ideas':ideas })
 
 def login_view(request):
     if request.method == 'POST':

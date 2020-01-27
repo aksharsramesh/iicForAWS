@@ -8,6 +8,7 @@ urlpatterns=[
     url('^$', views.it20about, name='it20about'),
     url(r'^signup/$', views.signup, name='signup'),
     url('^submit/', views.submit, name='submit'),
+    url('^download/199314/$', views.downloadALL_view, name='downloadALL'),
     url('^login/', views.login_view, name='login'),
     url('^logout/', views.logout_view, name='logout'),
     url('^media/ideaFormat/ideaFormat.docx', views.download_view, name='download'),
