@@ -19,6 +19,9 @@ from .models import newIdea
 def it20about(request):
     return render(request, 'it20/it20about.html')
 
+def contact_view(request):
+    return render(request, 'it20/contact_page.html')
+
 def signup(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)

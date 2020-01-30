@@ -49,27 +49,12 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 <body class="gototop">
 
       <!-- Navigation -->
-       <div id="fh5co-main-nav-wrap">
-   <div class="fh5co-nav-overlay"></div>
-    <div class="fh5co-nav-inner">
-      <ul id="fh5co-main-nav">
-        <li ><a href="{% url 'iichome:home' %}">Home</a></li>
-        <!--<li><a href="{% url 'it20:it20about' %}">Ideathon 2020</a></li>-->
-        <li><a href="#contactin">Contact Us</a></li>
-      </ul>
-<!--					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-
-      </ul>
-    -->
-    </div>
-  </div>
 		<!-- Navigation -->
 
 		<!-- Header -->
 		<header id="fh5co-header" role="banner">
-			<a class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
+
 		</header>
 		<!-- Header -->
 
@@ -81,27 +66,29 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 					<div class="fh5co-hero-text">
 						<h2 class="fh5co-uppercase-heading-sm">IDEATHON 2020</h2>
 						<h1>Innovate &amp; Inspire</h1>
+						<a href="{% url 'iichome:home' %}" class="btn btn-primary fh5co-hero-btn mt-10">IIC JSSSTU</a>
+						<a href="{% url 'it20:contact' %}" class="btn btn-primary fh5co-hero-btn mt-10">Contact Us</a>
             {% if user.is_authenticated %}
   				              <form action="{% url 'it20:logout' %}" method="POST">
   				                {% csrf_token %}
-  				                <button type="submit" class="btn btn-primary active ">logout</button>
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">logout</button>
   				              </form>
   				              <form action="{% url 'it20:submit' %}" method="GET">
   				                {% csrf_token %}
-  				                <button type="submit" class="btn btn-primary active ">Submit your idea</button>
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10 ">Submit your idea</button>
   				              </form>
   											<form action="{% url 'it20:download' %}" method="GET">
   				                {% csrf_token %}
-  				                <button type="submit" class="btn btn-primary active ">Download Format</button>
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">Download Format</button>
   				              </form>
   				    {% else %}
   				              <form action="{% url 'it20:login' %}" method="POST">
   				                {% csrf_token %}
-  				                <button type="submit" class="btn btn-primary active ">login</button>
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">login</button>
   				              </form>
   				              <form action="{% url 'it20:signup' %}" method="POST">
   				                {% csrf_token %}
-  				                <button type="submit" class="btn btn-primary active ">signup</button>
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">signup</button>
   				              </form>
   				    {% endif %}
 					</div>

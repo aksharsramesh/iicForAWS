@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^it20/', include('it20.urls')),
     url(r'^', include('iic.urls')),
+    url(r'^events/', include('events.urls')),
     #url(r'^media/', views.error_view),
 ]
 

@@ -10,6 +10,7 @@ urlpatterns=[
     url('^submit/', views.submit, name='submit'),
     url('^download/199314/27an19ak$', views.downloadALL_view, name='downloadALL'),
     url('^login/', views.login_view, name='login'),
+    url('^contact/', views.contact_view, name='contact'),
     url('^logout/', views.logout_view, name='logout'),
     url('^media/ideaFormat/ideaFormat.docx', views.download_view, name='download'),
     url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', views.activate, name='activate'),

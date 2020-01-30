@@ -1,0 +1,748 @@
+<!--
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE
+DESIGNED & DEVELOPED by FREEHTML5.CO
+Further designed by IIC JSSSTU
+//////////////////////////////////////////////////////
+ -->
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IIC_JSSSTU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  	<!-- Google Webfont -->
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Nunito:100,200,300,400,500,700|Montserrat:400,700'
+    rel='stylesheet' type='text/css'>
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <!-- Easy Responsive Tabs -->
+  <link rel="stylesheet" href="{% static 'css/easy-responsive-tabs.css' %}">
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Events page -->
+  <link rel="stylesheet" href="{% static 'css/ourEvents.css' %}">
+  <!-- <link rel="stylesheet" href="css/style2.css"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- ThemeFisher Icon -->
+  <link rel="stylesheet" href="{% static 'plugins/themefisher-fonts/themefisher-fonts.css' %}">
+  <!-- Light Box -->
+  <link rel="stylesheet" href="{% static 'plugins/magnific-popup/magnific-popup.css' %}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{% static 'plugins/animate/animate.css' %}">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <!-- for team -->
+  <!-- <link rel="stylesheet" href="css/ourTeam.css"> -->
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+  <script src="{% static 'plugins/modernizr.min.js' %}"></script>
+</head>
+
+<body data-name="gototop">
+  <!-- Navigation -->
+  <div id="fh5co-main-nav-wrap">
+    <div class="fh5co-nav-overlay"></div>
+    <div class="fh5co-nav-inner">
+      <ul id="fh5co-main-nav">
+        <!--<li class="active"><a href="index.html">Home</a></li>-->
+        <!--<li><a href="#fh5co-latest-project">About us</a></li>-->
+        <li class="active"><a href="#fh5co-latest-project">About Us</a></li>
+        <li class="active"><a href="{% url 'it20:it20about' %}">Ideathon 2020</a></li>
+        <li class="active"><a href="#events">Year 2019</a></li>
+        <!--<li><a href="ourTeam.html">Our Team</a></li>-->
+        <li class="active"><a href="#contactin">Contact Us</a></li>
+        <!--<li style="color:white">
+          <h2>Contact us</h2>
+        </li>-->
+      </ul>
+      <!--<ul class="fh5co-social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+      </ul>-->
+    </div>
+  </div>
+  <!-- Navigation -->
+
+  <!-- Header -->
+  <header id="fh5co-header" role="banner">
+    <a class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
+    <div id="fh5co-logo" class="text-center"><img src="{% static 'images/jssstu.png' %}" class="img-fluid"
+          width="200" height="80" alt="Image"><img src="{% static 'images/iic.png' %}" class="img-fluid mb-5" width="200" height="150"
+          alt="Image"></div>
+  </header>
+  <!-- Header -->
+
+  <!-- Hero -->
+  <aside role="complementary" id="fh5co-hero" style="background-image: url({% static 'images/bg2.jpg' %});">
+    <div class="fh5co-bg-overlay"></div>
+    <div class="container">
+      <div class="fh5co-hero-text-wrap">
+        <div class="fh5co-hero-text">
+          <h1>IIC JSSSTU</h1>
+          <p>Empowering the Innovator in you</p>
+          <br class="fh5co-spacer fh5co-spacer-sm">
+          <p>
+            <a href="#fh5co-latest-project" class="btn btn-primary fh5co-hero-btn ">About us</a>
+            <a href="{% url 'it20:it20about' %}" class="btn btn-primary fh5co-hero-btn mt-10" method="GET">IDEATHON 2020</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- Hero -->
+
+  <!-- Main -->
+  <main role="main">
+
+    <!-- Latest Project -->
+
+
+    <hr class="fh5co-spacer fh5co-spacer-sm">
+
+
+
+  </main>
+  <!-- Main -->
+
+
+
+
+
+
+        <!-- Our Events -->
+        <section class="container-fluid px-5 events">
+          <div class="heading-events text-center" id="events">
+              <h2>Our Events</h2>
+          </div>
+
+          <!--
+  <!-- IPR -->
+          <div class="row align-items-center content">
+              <div class="col-md-6 order-2 order-md-1">
+                  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'images/IPR/Adobe_20200124_085113.jpg' %}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/IPR/Adobe_20200124_085331.jpg' %}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/IPR/Adobe_20200124_085535.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/IPR/Adobe_20200124_085831.jpg' %}" alt="Fourth slide">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>One day workshop on Intellectual Property Rights and Patenting</h3>
+                          <!-- <img src="Bootstrap4_Code/13_Museum_Of_Candy/Final/imgs/lolli_icon.png" class="d-none d-lg-inline" alt=""> -->
+                          <div class="date">
+                              <p><span>10 Jan 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+
+                              <p class="lead">Institution Innovation Council (IIC) of JSS Science and Technology University organized  a one day workshop on Intellectual Property Rights and Patenting.
+                                  The occasion was graced by Dr.M.N.Bheemesh, Director of National Institution of Advanced Legal Studies. Dr. Mallikarjuna, Dean - Science and Head - IP Cell, Dr. B S Harish, Convener – IIC and other distinguished dignitaries were present. The workshop witnessed a total of 120 participants. The workshop gave an overview of Intellectual Property Rights with special emphasis on patenting.
+
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <!-- Ideathon 2019 -->
+          <div class="row align-items-center content">
+              <div class="col-md-6 text-center">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>IDEATHON 2019 by Institution’s Innovation Council (IIC)</h3>
+                          <div class="date">
+                              <p><span>01 March 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+                              <p class="lead">Institutions Innovation Council (IIC) of JSS Science and Technology University organized  IDEATHON 2019  as a mark of National Science Day. The occasion was graced by the Director of CSIR – CFTRI, Dr. K S M S Raghava Rao, Chief Guest and Prof. BG Sangameshwara, Vice Chancellor of JSS STU presided the program. Dr. Mallikarjuna Aradhya, President – IIC, Dr. B S Harish, Convener – IIC and Mr. Murugendra Bandrad, Student Coordinator and other distinguished dignitaries were present.
+                              </p>
+                              <p class="lead">The council received around 65 Novel Ideas from the students of different departments. Prizes for Ideathon were announced and three ideas were chosen out of 13 shortlisted ones by the jury. A total prize worth Rs. 18,000/- was give away to top 3 ideas.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-md-6">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8690.png' %}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8706.png' %}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8724.png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8739.png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8752.png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/IMG_8772.png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/WhatsApp Image 2020-01-27 at 14.27.39.png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/WhatsApp Image 2020-01-27 at 14.27.39 (1).png' %}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{% static 'images/ideathon/WhatsApp Image 2020-01-27 at 14.27.39 (3).png' %}" alt="Third slide">
+                        </div>
+                    </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+  <!-- Panel Discussion -->
+          <div class="row align-items-center content">
+              <div class="col-md-6 order-2 order-md-1">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+                         <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8855.png' %}" alt="First slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8885.png' %}" alt="Second slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8915.png' %}" alt="Third slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8942.png' %}" alt="Third slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8947.png' %}" alt="Third slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_8950.png' %}" alt="Third slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_9028.png' %}" alt="Third slide">
+                         </div>
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="{% static 'images/panel-discussion/IMG_9052.png' %}" alt="Third slide">
+                         </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="sr-only">Next</span>
+                     </a>
+                 </div>
+             </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>PANEL DISCUSSION</h3>
+                          <!-- <img src="Bootstrap4_Code/13_Museum_Of_Candy/Final/imgs/lolli_icon.png" class="d-none d-lg-inline" alt=""> -->
+                          <div class="date">
+                              <p><span>02 March 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+
+                              <p class="lead">IIC- JSS Science and Technology University had organized an entrepreneurial  talk followed by a panel discussion on "Engineers prefer startup rather than setlling in a company".  Mr.Narendra- founder and managing director  of Vinyas innovative technologies, Mr.Ashwin M J -cofounder of Elvago technologies , Mr.Adarsh Ramesh- CEO of Desiadda, Dr. C R Natraj- retired professor from SJCE , Mr.Sampathkumar- retired professor from SJCE were the panelists and Mr.Ramkumar was the  mediator.  The panel discussion brought out different perspectives of the panelists which was effectively channelised by the mediator to engage the audience.
+                              </p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+          <!-- Orientation Day -->
+          <div class="row align-items-center content">
+              <div class="col-md-6 text-center">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>Orientation day</h3>
+                          <div class="date">
+                              <p><span>22 Aug 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+                              <p class="lead">On 22nd August ,Institution's Innovation Council (IIC) organised  an orientation day. Dr. Harish, convenor of IIC, briefed everyone about institution's innovation council and the calendar of followed by which Niranjan our student co-ordinator invoked young minds about the importance of extra curriculars and also shared his personal experiences. Fun events like Random quiz, Juggle N Utter, Mummify, blow out and other activities  were conducted.
+                              </p>
+                              <p class="lead">Souhik from the department of EEE presented a music performance which was  icing on the cake. There was a great response from everyone who attended the program and it was a marvellous start to the academic year 2019-2020.
+                              </p>
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+              <div class="col-md-6">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'images/Orientation Day/Adobe_20200124_082937.jpg' %}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/Orientation Day/Adobe_20200124_083255.jpg' %}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/Orientation Day/Adobe_20200124_083632.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/Orientation Day/Adobe_20200124_083933.jpg' %}" alt="Third slide">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+        <!-- KYP-->
+          <div class="row align-items-center content">
+              <div class="col-md-6 order-2">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'images/KYP/Know Your Problem-1.jpg' %}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/KYP/WhatsApp Image 2020-01-26 at 23.29.50 (1).png' %}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/KYP/WhatsApp Image 2020-01-26 at 23.29.50.png' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/KYP/WhatsApp Image 2020-01-26 at 23.29.51.png' %}" alt="Third slide">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>KYP- KNow your problem</h3>
+                          <div class="date">
+                              <p><span>15 Sep 2019</span><span> - 25 Sep 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+                              <p class="lead">Institution's Innovation Council created an interesting opportunity to address day-to-day problems  which engineers could brainstorm and come up with solutions. A web portal was opened from September 15th to September 25th of 2019. There was an opportunity for an individual to post a relevant problem and also read others problems posted and upvote the best one. KYP was a huge success and witnessed over 100+ problem statements. 3 students with critical problems, bagged the highest votes  and were rewarded exciting cash prizes of worth rupees  5000.                            </p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+          <!-- Learn to Lead -->
+          <div class="row align-items-center content">
+              <div class="col-md-6 text-center">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>Learn To Lead</h3>
+                          <div class="date">
+                              <p><span>15 Oct 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+                              <p class="lead">Institution's Innovation Council Celebrated Innovation day on the birth anniversary of Dr. A P J Abdul Kalam i.e, on 15th October. Two young entrepreneurs  , Mr. Shikar- founder of MELSTAR manufacturing systems, which manufactures precision mechanical components for companies like Bosch and Mr. Murali-  co-founder of FOODBOX, a food start-up.
+                              </p>   <p class="lead">Both the entrepreneurs shared their journey, the challenges faced to establish in their respective markets. As both of their fields were different, they inspired the audience in distinct ways.
+                                  </p>
+                                <p class="lead">The gathering was graced by B.Suresh, Pro chancellor, JSS Academy of Higher Education and Research  and  President, Pharmacy council of India.
+                              </p>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+              <div class="col-md-6">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators6" data-slide-to="5"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/1c54accf5f8745b110404d847f76cb2f.png' %}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/1e526a2e972623f5c8e66e287091405e.png' %}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/6e75683e8f9e4f3cbd2bb9ee208dd6c6.png' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/6f67145fdefa090c6484c7a04e203205.png' %}" alt="Fourth slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/af97215307edcff9d93dae37d2e24be5.png' %}" alt="Fourth slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/learn-to-lead/cdde6d7aa788aa263f882990691016f0.png' %}" alt="Fourth slide">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+  -->
+
+          <!-- Hackathon 2019-->
+          <div class="row align-items-center content">
+              <div class="col-md-6 order-2">
+                  <!-- <img src="images/blog/blog-img2.jpg" alt="" class="img-fluid"> -->
+
+                  <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="5"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="6"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="7"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="8"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="9"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="10"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="11"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="12"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="13"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="14"></li>
+                          <li data-target="#carouselExampleIndicators7" data-slide-to="15"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-1.jpg' %}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-2.jpg' %}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-3.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-4.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-5.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-6.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-7.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-8.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-9.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-10.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-11.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-12.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-13.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-14.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-15.jpg' %}" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'images/hackathon/img-16.jpg' %}" alt="Third slide">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row  justify-content-center">
+                      <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                          <h3>24 hours state level Hackathon by</h3>
+                             <h3> IIC–JSSSTU</h3>
+                          <div class="date">
+                              <p><span>01 Nov 2019</span><span> - 02 Nov 2019</span></p>
+                          </div>
+                          <div class="leadDisplay">
+                              <p class="lead">
+                                  JSS Science and Technology University’s – Institution Innovation Council (IIC) created history by hosting  the first ever 24-hour State level Hackathon in the college campus on Nov 1st and 2nd. With over 280 participants working in teams to arrive at innovative solutions, the event was  undoubtedly one of the most successful ones hosted by IIC. A total of  Rs. 80,000/- was given to winners.
+                              </p>
+                              <p class="lead">Dr. Anurag Srivatsava, Chief Operating Officer, Society for Innovation & Development, IISC Bengaluru was the chief guest of the valedictory function. He talked extensively about  “Future Readiness” and emphasized on the fact that, we don’t have a future without innovation.
+                              </p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+
+      </section>
+
+<!-- Footer -->
+
+      <div id="contactin">
+        <footer role="contentinfo">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.037274744301!2d76.61123781412908!3d12.31327673231407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7ae94fffffff%3A0x1ad797cbfc78d07a!2sJSS%20Science%20and%20Technology%20University%2C%20Mysuru.!5e0!3m2!1sen!2sin!4v1577629431800!5m2!1sen!2sin"
+                  width="400" height="200" frameborder="0" style="border:0;width:90%" allowfullscreen=""></iframe>
+              </div>
+              <div class="col-md-4 ml">
+                <h5>Email-Id</h5>
+                <ul class="fh5co-footer-links ">
+                  <li><a href="#" class="fh5co-link "><i class="fa fa-envelope"></i>
+                      iicjssstu@jssstuniv
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="fh5co-footer-title">Connect</h2>
+                <ul class="fh5co-footer-links">
+                  <li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+                  <li><a href="https://www.instagram.com/iicjss_stu/" class="fh5co-link"><i class="fa fa-instagram"></i>Instagram</a></li>
+
+                </ul>
+              </div>
+            </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fh5co-copyright">
+
+              <p class="pull-left">&copy; Relic 2015. All Rights Reserved. <br> Lovely crafted by <a
+                  href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> further designed by IIC JSSSTU</p>
+
+              <!--ul class="pull-right fh5co-footer-social">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- Footer -->
+  </div>
+
+  <!-- Go To Top
+  <a href="fh5co-main-nav-wrap" class="fh5co-gotop"><i class="ti-angle-up"></i></a>
+-->
+
+  <!-- jQuery -->
+  <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+  <!-- jQuery Easing -->
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <!-- Bootstrap -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- Owl carousel -->
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <!-- Magnific Popup -->
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <!-- Easy Responsive Tabs -->
+  <script src="{% static 'js/easyResponsiveTabs.js' %}"></script>
+  <!-- FastClick for Mobile/Tablets -->
+  <script src="{% static 'js/fastclick.js' %}"></script>
+  <!-- Velocity -->
+  <script src="{% static 'js/velocity.min.js' %}"></script>
+  <!-- Main JS -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+  <script src="{% static 'plugins/jquery.min.js' %}"></script>
+
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+  <!-- slick slider -->
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <!-- filter -->
+  <script src="{% static 'plugins/filterizr/jquery.filterizr.min.js' %}"></script>
+  <!-- Lightbox -->
+  <script src="{% static 'plugins/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+  <!-- Parallax -->
+  <script src="{% static 'plugins/parallax.min.js' %}"></script>
+  <!-- Video -->
+  <script src="{% static 'plugins/jquery.vide.js' %}"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+  <script src="{% static 'plugins/google-map/gmap.js' %}"></script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

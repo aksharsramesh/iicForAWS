@@ -1,0 +1,38 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'login-signup/materialize.min.css' %}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <nav>
+    <div class="nav-wrapper green darken-4">
+    <div class="container">
+    	 <a href="/" class="brand-logo">IIC JSSSTU</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="{% url 'iichome:home' %}">Return to IIC JSSSTU</a></li>
+	        <li><a href="{% url 'it20:it20about' %}">Return to Ideathon 2020</a></li>
+	      </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2>IDEATHON 2020</h2>
+          <form action="{% url 'it20:it20about' %}" method="get">
+            {% csrf_token %}
+            <p>Ankit(Club Cordinator) - +91 9481 56278</p>
+            <p>Charan(Club Cordinator) - +91 98802 48032</p>
+            <p>Email - iicjssstu@jssstuniv.in</p>
+            <p>Happy To Help You!!</p>
+            <button class="btn btn-large" type="submit">Return Ideathon 2020</button>
+          </form>
+        </div>
+    </div>
+  </div>
+ <script src="{% static 'login-signup/materialize.min.js' %}"></script>
+</body>
+</html>
