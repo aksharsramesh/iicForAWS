@@ -90,6 +90,10 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
   				                {% csrf_token %}
   				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">signup</button>
   				              </form>
+						<form action="{% url 'it20:download' %}" method="GET">
+  				                {% csrf_token %}
+  				                <button type="submit" class="btn btn-primary fh5co-hero-btn mt-10">Download Format</button>
+  				              </form>
   				    {% endif %}
 					</div>
 				</div>
