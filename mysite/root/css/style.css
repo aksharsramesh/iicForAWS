@@ -130,6 +130,17 @@ ul ul, ul ol, ol ul, ol ol {
   z-index: 17;
   position: relative;
 }
+
+#fh5co-header #fh5co-logo .img-iic{
+  /* margin-bottom: 75px; */
+  height: 130px;
+  max-height: 200px;
+  width: 210px;
+}
+#fh5co-header #fh5co-logo .img-jss{
+  height: 90px;
+}
+
 #fh5co-header #fh5co-logo a {
   display: block;
 }
