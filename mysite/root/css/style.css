@@ -1,7 +1,7 @@
 /*
 //////////////////////////////////////////////////////
 
-FREE HTML5 TEMPLATE 
+FREE HTML5 TEMPLATE
 DESIGNED & DEVELOPED by FREEHTML5.CO
 
 //////////////////////////////////////////////////////
@@ -13,12 +13,17 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
   font-weight: normal;
   font-style: normal;
 }
+.trying{
+	margin-top: 60px;
+	padding-top: 90px;
+}
 body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 24px;
   color: #2e2e2e;
 }
+li { display: inline-block; text-align: center; }
 
 ::-webkit-selection {
   color: #ffffff;
@@ -448,7 +453,7 @@ main[role="main"], #fh5co-blog {
   list-style: none;
   padding: 0;
   margin: 0 0 0px 0;
- 
+
 }
 .nav-active #fh5co-main-nav-wrap #fh5co-main-nav li a {
   font-size: 30px;
@@ -469,7 +474,7 @@ main[role="main"], #fh5co-blog {
   padding: 0;
   margin: 0;
   text-align: center;
-  
+
 }
 .nav-active #fh5co-main-nav-wrap .fh5co-social li {
   list-style: none;
@@ -661,10 +666,10 @@ footer .fh5co-footer-social li a {
   z-index: 21;
 }
 
-/* 
+/*
 ========================================
 
-Components 
+Components
 
 ========================================
 */
@@ -1428,7 +1433,7 @@ a > img.fh5co-align-center {
 {
 	height:200px;
 	position:center;
-	
+
 }
 .bb
 {
