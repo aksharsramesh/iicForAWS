@@ -14,4 +14,4 @@ class SignupForm(UserCreationForm):
 class NEWIdeaSubmissionForm(ModelForm):
     class Meta:
         model = models.newIdea
-        fields = ['title', 'contact', 'document']
+        fields = ['title', 'contact', 'UPI', 'document']
