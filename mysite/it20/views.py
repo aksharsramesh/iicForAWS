@@ -93,7 +93,7 @@ def submit(request):
                 instance = form.save(commit=False)
                 instance.author = request.user
                 instance.save()
-                return HttpResponse('Your Response Has Been Reccorded')
+                return HttpResponse('Your Response Has Been Recorded. Return To http://iicjssstu.in/it20')
     else:
         form = NEWIdeaSubmissionForm()
         return render(request, 'it20/ideaSubPage.html', {'form':form})
