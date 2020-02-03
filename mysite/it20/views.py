@@ -88,28 +88,6 @@ def logout_view(request):
 @login_required(login_url='it20:login')
 def submit(request):
     if request.method == 'POST':
-        # form = IdeaSubmissionForm(request.POST, request.FILES)
-        # if form.is_valid():
-#            form = IdeaSubmissionForm()
-#            instance = form.save(commit=False)
-#            instance.participantOne = request.POST['participantOne']
-#            instance.participantTwo = request.POST['participantTwo']
-#            instance.participantThree = request.POST['participantThree']
-#            instance.upi = request.POST['upi']
-#            instance.title = request.POST['title']
-#            instance.introduction = request.POST['introduction']
-#            instance.body = request.POST['body']
-#            instance.email = request.POST['email']
-#            instance.contact = request.POST['contact']
-#            instance.author = request.user
-#            instance.slug = request.user
-#            instance.document = request.POST.get('document')
-#            uploaded_file = request.FILES['document']
-#            fs = FileSystemStorage()
-#            fs.save(uploaded_file.name, uploaded_file)
-#            instance.save()
-#            return redirect('it20:it20about')
-
             form = NEWIdeaSubmissionForm(request.POST, request.FILES)
             if form.is_valid():
                 instance = form.save(commit=False)
