@@ -42,7 +42,7 @@ def signup(request):
                         mail_subject, message, to=[to_email]
             )
             email.send()
-            return HttpResponse('Please confirm your email address to complete the registration')
+            return HttpResponse('Please confirm your email address by clicking on the link sent to your email ID.(Please check for the email in all categories - Updates, Spam, Promotions')
     else:
         form = SignupForm()
     return render(request, 'it20/signup.html', {'form': form})
