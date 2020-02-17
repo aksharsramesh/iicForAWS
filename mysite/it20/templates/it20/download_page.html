@@ -35,6 +35,8 @@
                     <td>{{ idea.Your_UPI_ID }}</td>
                     {% if {{ idea.document.url }} %}
                       <td>{{ idea.document.url }}</td>
+                    {% else %}
+                      <td>ERROR CASE</td>
                     {% endif %}
                     <td>{{ idea.Contact_Number }}</td>
                     <td>{{ idea.date }}</td>
