@@ -7,8 +7,8 @@ class newIdea(models.Model):
     Title_Of_Idea = models.CharField(max_length = 100)
     author = models.CharField(max_length = 100)
     UPI_transaction_ID = models.CharField(max_length = 100)
-    Your_UPI_ID = models.CharField(max_length = 100, blank = True)
-    document = models.FileField(upload_to='documents/', blank=True)
+    Your_UPI_ID = models.CharField(max_length = 100)
+    document = models.FileField(upload_to='documents/', default='ideaFormat/Ideathon_2.0.docx')
     date = models.DateTimeField(auto_now_add = True)
     Contact_Number = models.CharField(max_length = 13)
 
