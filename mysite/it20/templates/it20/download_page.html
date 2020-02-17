@@ -33,11 +33,8 @@
                     <td>{{ idea.author }}</td>
                     <td>{{ idea.UPI_transaction_ID }}</td>
                     <td>{{ idea.Your_UPI_ID }}</td>
-                    {% if {{ idea.document.url }} %}
-                      <td>{{ idea.document.url }}</td>
-                    {% else %}
-                      <td>ERROR CASE</td>
-                    {% endif %}
+                    <td>
+                      <a href="{{ idea.document.url }}" class="btn btn-primary btn-sm">{{ idea.Title_Of_Idea }}</a></td>
                     <td>{{ idea.Contact_Number }}</td>
                     <td>{{ idea.date }}</td>
                   </tr>
