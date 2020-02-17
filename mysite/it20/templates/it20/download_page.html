@@ -33,7 +33,9 @@
                     <td>{{ idea.author }}</td>
                     <td>{{ idea.UPI_transaction_ID }}</td>
                     <td>{{ idea.Your_UPI_ID }}</td>
-                    <td>{{ idea.Your_UPI_ID }}</td>
+                    {% if {{ idea.document.url }} %}
+                      <td>{{ idea.document.url }}</td>
+                    {% endif %}
                     <td>{{ idea.Contact_Number }}</td>
                     <td>{{ idea.date }}</td>
                   </tr>
