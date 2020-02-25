@@ -19,6 +19,9 @@ from .models import newIdea
 def it20about(request):
     return render(request, 'it20/it20about.html')
 
+def closed(request):
+    return render(request, 'it20/closed.html')
+
 def contact_view(request):
     return render(request, 'it20/contact_page.html')
 
