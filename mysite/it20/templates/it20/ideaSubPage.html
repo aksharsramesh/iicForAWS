@@ -6,7 +6,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 Further designed by IIC JSSSTU
 //////////////////////////////////////////////////////
  -->
-{% load static from staticfiles %}
+{% load static from static %}
 {% load crispy_forms_tags %}
 
 <!DOCTYPE html>
@@ -69,11 +69,11 @@ Further designed by IIC JSSSTU
 			<div class="container">
 				<div class="fh5co-hero-text-wrap">
 					<div class="fh5co-hero-text">
-						<h2 class="fh5co-uppercase-heading-sm">IDEATHON 2020</h2>
+						<h2 class="fh5co-uppercase-heading-sm">IDEATHON 2021</h2>
 						<h2>A good idea becomes a great idea,when you let it out.</h2>
             <form action="{% url 'it20:it20about' %}" method="GET">
 							{% csrf_token %}
-							<button type="submit" class="btn btn-primary btn-lg">Return To Ideathon 2020</button>
+							<button type="submit" class="btn btn-primary btn-lg">Return To Ideathon 2021</button>
 						</form>
 					</div>
 				</div>

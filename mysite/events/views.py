@@ -8,6 +8,13 @@ from django.shortcuts import render
 
 def allevents_view(request):
     return render(request, 'events/allevents.html')
+def allevents20_view(request):
+    return render(request, 'events/allevents20.html')
+def it2020(request):
+        return render(request, 'events/it20events.html')
+def innvoc1(request):
+        return render(request, 'events/innvoc1.html')
+
 
 def ipr(request):
     return render(request, 'events/iprevent.html')
