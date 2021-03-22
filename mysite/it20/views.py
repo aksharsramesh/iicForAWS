@@ -19,6 +19,9 @@ from .models import newIdea
 def it20about(request):
     return render(request, 'it20/it20about.html')
 
+def postsignup(request):
+    return render(request, 'it20/post-signup.html')
+
 def contact_view(request):
     return render(request, 'it20/contact_page.html')
 
@@ -27,9 +30,10 @@ def signup(request):
         form = SignupForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
-            user.is_active = False
+            user.is_active = True
             user.save()
             current_site = get_current_site(request)
+            """
             mail_subject = 'Activation Link For Ideathon2020'
             message = render_to_string('it20/acc_active_email.html', {
                 'user': user,
@@ -42,7 +46,8 @@ def signup(request):
                         mail_subject, message, to=[to_email]
             )
             email.send()
-            return HttpResponse('Please confirm your email address to complete the registration')
+            """
+            return render(request, 'it20/post-signup.html')
     else:
         form = SignupForm()
     return render(request, 'it20/signup.html', {'form': form})

@@ -1,0 +1,28 @@
+{% load static from static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+
+  <html>
+    <head>
+	    <title>SignUp Ideathon</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'login-signup/materialize.min.css' %}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <nav>
+    <div class="nav-wrapper black darken-4">
+    <div class="container">
+    	 <a href="{% url 'iichome:home' %}" class="brand-logo">IIC JSSSTU</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="{% url 'it20:login' %}">Login</a></li>
+	        <li><a href="{% url 'it20:contact' %}">Contact</a></li>
+	      </ul>
+    </div>
+    </div>
+  </nav>
+  <p>Account created successfully. Login Now</p>
+
+ <script src="{% static 'login-signup/materialize.min.js' %}"></script>
+</body>
+</html>
