@@ -106,11 +106,11 @@ def submit(request):
 
 def download_view(request):
     fs = FileSystemStorage()
-    filename = 'ideaFormat/Ideathon_2.0.docx'
+    filename = 'ideaFormat/Ideathon_3.0.docx'
     if fs.exists(filename):
         with fs.open(filename) as DemoDocument:
             response = HttpResponse(DemoDocument, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-            response['Content-Disposition'] = 'attachment; filename="Ideathon_2.0.docx"'
+            response['Content-Disposition'] = 'attachment; filename="Ideathon_3.0.docx"'
             return response
     else:
         return HttpResponseNotFound('The requested pdf was not found in our server.')
