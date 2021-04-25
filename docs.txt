@@ -1,0 +1,102 @@
+On branch dev_am
+Your branch is ahead of 'origin/dev_am' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   mysite/db.sqlite3
+	modified:   mysite/iic/urls.py
+	modified:   mysite/iic/views.py
+	modified:   mysite/mysite/settings.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs.txt
+	mysite/events/__pycache__/__init__.cpython-36.pyc
+	mysite/events/__pycache__/admin.cpython-36.pyc
+	mysite/events/__pycache__/models.cpython-36.pyc
+	mysite/events/__pycache__/urls.cpython-36.pyc
+	mysite/events/__pycache__/views.cpython-36.pyc
+	mysite/events/migrations/__pycache__/__init__.cpython-36.pyc
+	mysite/iic/__pycache__/__init__.cpython-36.pyc
+	mysite/iic/__pycache__/admin.cpython-36.pyc
+	mysite/iic/__pycache__/models.cpython-36.pyc
+	mysite/iic/__pycache__/urls.cpython-36.pyc
+	mysite/iic/__pycache__/views.cpython-36.pyc
+	mysite/iic/migrations/__pycache__/__init__.cpython-36.pyc
+	mysite/it20/__pycache__/__init__.cpython-36.pyc
+	mysite/it20/__pycache__/admin.cpython-36.pyc
+	mysite/it20/__pycache__/forms.cpython-36.pyc
+	mysite/it20/__pycache__/models.cpython-36.pyc
+	mysite/it20/__pycache__/tokens.cpython-36.pyc
+	mysite/it20/__pycache__/urls.cpython-36.pyc
+	mysite/it20/__pycache__/views.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0001_initial.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0002_auto_20200127_2131.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0003_auto_20200127_2131.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0004_newidea_upi.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0005_auto_20200203_1406.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0006_auto_20200203_1411.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/0007_auto_20200203_1430.cpython-36.pyc
+	mysite/it20/migrations/__pycache__/__init__.cpython-36.pyc
+	mysite/media/documents/.pdf
+	mysite/media/documents/Anti-theft_petrol_device-converted.pdf
+	mysite/media/documents/Anti-theft_petrol_device.docx
+	mysite/media/documents/Battery_Voltage_Monitor_edited.docx
+	mysite/media/documents/IDEATHON_IIC.pdf
+	mysite/media/documents/IIC_Ideathon.pdf
+	mysite/media/documents/I_am_sharing_Smart_Agri_with_you
+	mysite/media/documents/I_am_sharing_Smart_Agri_with_you_trM5iDD
+	mysite/media/documents/Ideathon1_3.0-converted.pdf
+	mysite/media/documents/Ideathon1_3.0.docx
+	mysite/media/documents/Ideathon_3.0.pdf
+	mysite/media/documents/Ideathon_3.0_1.docx
+	mysite/media/documents/Ideathon_3.0_1_UtGMZf4.docx
+	mysite/media/documents/Ideathon_3.0_1_WE8vkGG.docx
+	mysite/media/documents/Ideathon_3.0_2.docx
+	mysite/media/documents/Ideathon_3.0_final.pdf
+	mysite/media/documents/MRM.pdf
+	mysite/media/documents/MRM_l9UTCp4.pdf
+	mysite/media/documents/PROPOSAL_BIOPLASTIC_pdf.pdf
+	mysite/media/documents/PROPOSAL_Eco-_aerogel_pdf.pdf
+	mysite/media/documents/SPEECHLESS.pdf
+	mysite/media/documents/Switch_Easy_Ideathon_3.0.pdf
+	mysite/media/documents/Switch_Easy_Ideathon_3.0_DMswF2a.pdf
+	mysite/media/documents/TapScanner_02-10-2021-13.34.pdf
+	mysite/media/documents/aqua-dro-ponics.pdf
+	mysite/media/documents/aqua-dro-ponics_P8JBPjA.pdf
+	mysite/media/documents/coHasna.pdf
+	mysite/media/documents/coHasna_xKRf3YS.pdf
+	mysite/media/documents/document.pdf
+	mysite/media/documents/inbound1299730411481302046.pdf
+	mysite/media/documents/inbound8011249513560817625.pdf
+	mysite/media/documents/inbound8011249513560817625_Ei1D5Aw.pdf
+	mysite/media/documents/pgfy-compressed.pdf
+	mysite/media/documents/pgfyupdated.pdf
+	mysite/mysite/__pycache__/__init__.cpython-36.pyc
+	mysite/mysite/__pycache__/email_info.cpython-36.pyc
+	mysite/mysite/__pycache__/settings.cpython-36.pyc
+	mysite/mysite/__pycache__/urls.cpython-36.pyc
+	mysite/mysite/__pycache__/views.cpython-36.pyc
+	mysite/mysite/__pycache__/wsgi.cpython-36.pyc
+	mysite/root/admin/css/autocomplete.css
+	mysite/root/admin/css/responsive.css
+	mysite/root/admin/css/responsive_rtl.css
+	mysite/root/admin/css/vendor/
+	mysite/root/admin/img/icon-viewlink.svg
+	mysite/root/admin/js/autocomplete.js
+	mysite/root/admin/js/vendor/jquery/LICENSE.txt
+	mysite/root/admin/js/vendor/select2/
+	mysite/root/admin/js/vendor/xregexp/LICENSE.txt
+	mysite/root/images/ideathon/1.jpg
+	mysite/root/images/ideathon/10.JPG
+	mysite/root/images/ideathon/12.JPG
+	mysite/root/images/ideathon/2.JPG
+	mysite/root/images/ideathon/6_1.JPG
+	mysite/root/images/ideathon/8.JPG
+	mysite/root/images/innovocls/
+
+no changes added to commit (use "git add" and/or "git commit -a")
