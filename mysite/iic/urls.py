@@ -7,4 +7,5 @@ app_name='iichome'
 
 urlpatterns=[
     url(r'^$', views.iichome, name='home'),
+    #url(r'^static/$', views.error_view),
 ]

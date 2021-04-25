@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def iichome(request):
     return render(request, 'iic/home.html')
+
+def error_view(request):
+    return render(request, 'iic/home.html')
