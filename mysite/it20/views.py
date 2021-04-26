@@ -90,6 +90,9 @@ def logout_view(request):
         logout(request)
         return redirect('it20:it20about')
 
+def closed_view(request):
+    return HttpResponse('Submission For Ideathon2021 Closed. Follow our instagram page for future updates.')
+
 @login_required(login_url='it20:login')
 def submit(request):
     if request.method == 'POST':
